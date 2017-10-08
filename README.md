@@ -14,7 +14,7 @@ requested kinesis stream.
 All functions use the common endpoint https://api.banc.io
 
 ## Kinesis
-/kinesis/{stream name}
+/kinesis/stream/{stream name}
 
 ### POST
 Post a new event to the specified kinesis stream
