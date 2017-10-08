@@ -7,8 +7,7 @@
         "runtime": "python2.7", 
         "s3_bucket": "zappa-kinesis-api",
         "api_key_required": true,
-        "timeout_seconds": 28,
-        "manage_roles": false,
-        "role_name": "kinesis_api_role"
+        "api_key": "6qd587ywj4",
+        "timeout_seconds": 28
     }
 }
