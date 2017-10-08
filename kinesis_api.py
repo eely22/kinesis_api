@@ -60,9 +60,9 @@ def internal_error(error=None):
 # ------------------------------------------------------------------------------
 @app.route('/kinesis/version')
 def version():
-    return json.dumps({'version': api_version})
+    return JSONResponse(json.dumps({'version': api_version}))
 
-@app.route('/kinesis/stream/<string:muns>', methods=['POST'])
+@app.route('/kinesis/stream/<string:stream_name>', methods=['POST'])
 def kinesis(stream_name):
     try:
         params = get_payload(request)
