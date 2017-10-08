@@ -1,4 +1,4 @@
-[![Deployment status from DeployBot](https://bluz.deploybot.com/badge/66802254036135/98581.svg)](http://deploybot.com)
+[![Deployment status from DeployBot](https://bluz.deploybot.com/badge/34534836024090/117253.svg)](http://deploybot.com)
 
 Kinesis API
 ==========
