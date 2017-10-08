@@ -1,0 +1,12 @@
+{
+    "prod": {
+        "app_function": "kinesis_api.app", 
+        "aws_region": "us-west-2", 
+        "profile_name": "default", 
+        "project_name": "kinesis-api", 
+        "runtime": "python2.7", 
+        "s3_bucket": "zappa-kinesis-api",
+        "api_key_required": true,
+        "timeout_seconds": 28
+    }
+}
