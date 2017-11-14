@@ -42,3 +42,21 @@ Code | Description
 ```
 curl --header 'Content-Type:application/json; charset=UTF-8' -d '{"event": {"hello": "world"}' https://api.banc.io/kinesis/test-stream
 ```
+
+## Deployment
+
+This project uses [zappa](https://github.com/Miserlou/Zappa) to deploy. You will first need to change some basic config,
+such as the API Key in the zappa_settings.json file, or you can set api_key_required to 'false' to disable it (but then
+anyone, anywhere could publish to your kinesis stream, not recommended!)
+
+To deploy, make sure you have the correct aws credentials on your system and do the following (on mac or linux):
+
+```
+virtualenv env
+source env/bin/activate
+pip install -r requirements.txt
+zappa deploy prod
+```
+
+This will deploy the lambda function to your AWS account and create the API Gateway necessary. The endpoint will be
+displayed in the console once deployed.
